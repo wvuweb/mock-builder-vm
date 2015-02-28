@@ -1,8 +1,8 @@
-class Hammer < Vagrant.plugin("2")
-  name "Hammer"
+class MockBuilder < Vagrant.plugin("2")
+  name "MockBuilder"
 
-  command "hammer-update" do
-    require_relative "hammer/update"
+  command "mock-update" do
+    require_relative "mock_builder/update"
     Update
   end
 
