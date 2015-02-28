@@ -1,4 +1,4 @@
-# A Virtual Machine for Hammer
+# A Virtual Machine for Mock Builder
 
 ## Introduction
 
