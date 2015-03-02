@@ -16,18 +16,18 @@ This project automates the setup of a development environment for working with [
 
 Building the virtual machine is this easy:
 ```
-$ git clone https://github.com/wvuweb/mock-builder-vm.git
-$ cd mock-builder-vm
-$ vagrant up
+git clone https://github.com/wvuweb/mock-builder-vm.git
+cd mock-builder-vm
+vagrant up
 ```
 
-The only other requirement is making sure that you clone this VM repo into the same directory level as your `slate_themes` folder
+Make sure that you clone this VM repo into the same directory level as your `slate_themes` folder
 
 Example:
 ```
 /Sites/
- |_slate_themes
- |_mock-builder-vm
+ |_/slate_themes/
+ |_/mock-builder-vm/
 ```
 
 When the vagrant process finishes you should be able to access your themes in the browser at [localhost:2000](http://localhost:2000)
