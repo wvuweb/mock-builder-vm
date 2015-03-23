@@ -35,6 +35,9 @@ When the vagrant process finishes you should be able to access your themes in th
 
 ## Commands
 
+**Stopping mock-builder**
+Mock Builder does not run in a deamon mode.  You will have to kill the process (cntl c) twice to to run any other commands
+
 To be ran from the `/mock-builder-vm/` directory
 ```
 vagrant up              #Start Mock Builder
