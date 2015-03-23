@@ -1,9 +1,11 @@
-class MockBuilder < Vagrant.plugin("2")
-  name "MockBuilder"
+module MockBuilder
+  class MockBuilder < Vagrant.plugin("2")
+    name "MockBuilder"
 
-  command "mock-update" do
-    require_relative "mock_builder/update"
-    Update
+    command "mock-builder" do
+      require_relative "mock_builder/root"
+      Update
+    end
+    
   end
-
 end
