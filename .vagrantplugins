@@ -4,8 +4,8 @@ module MockBuilder
 
     command "mock-builder" do
       require_relative "mock_builder/root"
-      Update
+      Root
     end
-    
+
   end
 end
