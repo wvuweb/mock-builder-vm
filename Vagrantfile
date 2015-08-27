@@ -21,7 +21,7 @@ Vagrant.configure('2') do |config|
 
   config.trigger.after [:up], stdout: true, stderr: true do
     info "Starting Mock Builder..."
-    run_remote "cd /srv/mock_builder/mock_builder && ruby mock_server.rb"
+    run_remote "cd /srv/mock_builder/mock_builder && ruby mock_server.rb --daemon 1"
   end
 
   config.trigger.before [:halt], stdout: true, stderr: true do
