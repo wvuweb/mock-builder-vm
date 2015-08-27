@@ -42,7 +42,7 @@ If you would like to have aliases for the above command add the following to you
 ```
 alias mock-start="cd ~/Sites/mock-builder-vm && vagrant up"
 alias mock-stop="cd ~/Sites/mock-builder-vm && vagrant halt"
-alias mock-update="cd ~/Sites/mock-builder-vm && vagrant mock update"
+alias mock-update="cd ~/Sites/mock-builder-vm && vagrant mock-builder update"
 ```
 
 ### Other Notes
