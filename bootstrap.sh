@@ -24,6 +24,19 @@ install 'ExecJS runtime' nodejs
 
 git clone https://github.com/wvuweb/mock_builder.git /srv/mock_builder
 
+cd /vagrant
+
+gem install nokogiri -- --use-system-libraries=true --with-xml2-include=/usr/include/libxml2
+gem install nokogumbo -- --use-system-libraries=true --with-xml2-include=/usr/include/libxml2
+
+# check branch of mock_builder-vm if in dev switch hammer branch to dev
+branch=$(git symbolic-ref --short HEAD)
+cd /srv/mock_builder
+if [ "$branch"="dev" ]; then
+  echo "Checking out dev branch of Mock Builder"
+  git checkout dev
+fi
+
 cd /srv/mock_builder
 bundle install
 
